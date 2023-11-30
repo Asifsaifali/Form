@@ -1,5 +1,6 @@
 import './App.css'
-import Form from './components/Form/Form'
+// import Form from './components/Form/Form'
+import FormPage from './components/Page/FormPage';
 function App() {
 
  
@@ -8,8 +9,9 @@ function App() {
   }
   return (
     <>
-      <Form />
-      <button onClick={handlePrint}>🖨️</button>
+      {/* <Form />
+      <button onClick={handlePrint}>🖨️</button> */}
+      <FormPage/>
     </>
   )
 }
