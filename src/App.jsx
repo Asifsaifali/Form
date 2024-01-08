@@ -1,6 +1,7 @@
 import './App.css'
-// import Form from './components/Form/Form'
+import Form from './components/Form/Form'
 import FormPage from './components/Page/FormPage';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 function App() {
 
  
@@ -9,9 +10,15 @@ function App() {
   }
   return (
     <>
-      {/* <Form />
-      <button onClick={handlePrint}>🖨️</button> */}
-      <FormPage/>
+    {/* //    <Form />
+    //   <button onClick={handlePrint}>🖨️</button>  */}
+     
+     <Router>
+      <Routes>
+        <Route path="/" element={<FormPage />} />
+        <Route path="/formPage" element={<Form />} />
+      </Routes>
+    </Router>
     </>
   )
 }

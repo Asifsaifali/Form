@@ -2,9 +2,7 @@ import { useState } from "react"
 import Style from "./Css"
 const Form = () => {
 
-
-  const[value, setValue] = useState("_______________________________")
-
+  const[value,setValue] = useState("___________________________")
   return (
     <>
     <Style.Container>
@@ -18,10 +16,12 @@ const Form = () => {
             <Style.FormBox>
                <Style.ContentPic>
                  <Style.ContentBox>
+                 <Style.ContentBox>
                     <Style.H3>CANDIDATE'S NAME:&nbsp;<u>{value}</u></Style.H3>
                     <Style.H3>GUARDIAN'S NAME:&nbsp;<u>{value}</u></Style.H3>
                     <Style.H3>D.O.B:&nbsp;<u>{value}</u></Style.H3>
                     <Style.H3>GUARDIAN'S MOB NO:&nbsp;<u>{value}</u></Style.H3>
+                 </Style.ContentBox>
                  </Style.ContentBox>
                 <Style.PicBox>
                     <Style.Pic>PHOTO</Style.Pic>
