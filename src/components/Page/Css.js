@@ -18,6 +18,9 @@ const Style = {
         flex-direction: column;
         overflow-y: scroll;
         /* overflow-x: hidden; */
+        &::-webkit-scrollbar{
+            display: none;
+        }
     `,
     LineBox: styled.div`
         width: 6%;

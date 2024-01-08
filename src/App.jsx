@@ -1,17 +1,19 @@
-import "./App.css";
+import './App.css'
 // import Form from './components/Form/Form'
-import FormPage from "./components/Page/FormPage";
+import {FormPage} from './components/Page/FormPage';
 function App() {
+
+ 
   // const handlePrint = ()=>{
   //   window.print();
   // }
   return (
     <>
-      {/* <Form />
+       {/* <Form />
       <button onClick={handlePrint}>🖨️</button> */}
-      <FormPage />
+      <FormPage/>
     </>
-  );
+  )
 }
 
-export default App;
+export default App

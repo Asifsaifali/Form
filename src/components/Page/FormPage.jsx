@@ -2,12 +2,17 @@ import { useState } from "react";
 import Style from "./Css";
 // import Pic from '../.././assets/boy.png'
 
+const obj = {
+  Fname: '',
+};
 const FormPage = () => {
-  const [name, setName] = useState();
+  const [Fname, setFName] = useState();
 
-  const Changehandler = (e) => {
-    console.log(e.target.value);
-    setName(e.target.value);
+
+  console.log(obj);
+  const dataHandler = () => {
+    obj.Fname = Fname;
+    console.log(obj)
   };
   return (
     <>
@@ -30,12 +35,14 @@ const FormPage = () => {
               <Style.ValueBox>
                 <Style.Label>First Name</Style.Label>
                 <Style.Input
-                  value={name}
-                  onChange={Changehandler}
+                  value={Fname}
+                  onChange={(e) => {
+                    setFName(e.target.value)
+                  }}
                   placeholder="Enter your first name"
                 />
               </Style.ValueBox>
-              <Style.ValueBox>
+              {/* <Style.ValueBox>
                 <Style.Label>Last Name</Style.Label>
                 <Style.Input placeholder="Enter your last name" />
               </Style.ValueBox>
@@ -47,7 +54,7 @@ const FormPage = () => {
               </Style.ValueBox>
               <Style.ValueBox>
                 <Style.Label>D.O.B</Style.Label>
-                <Style.Input placeholder="Enter your d.o.b" />
+                <Style.Input type="date" placeholder="Enter your d.o.b" />
               </Style.ValueBox>
             </Style.InputBox>
             <Style.InputBox>
@@ -56,8 +63,15 @@ const FormPage = () => {
                 <Style.Input placeholder="Enter your number" />
               </Style.ValueBox>
               <Style.ValueBox>
-                <Style.Label>CLASS</Style.Label>
-                <Style.Input placeholder="Enter your class" />
+                <Style.Label>
+                    <label htmlFor="nn">Class</label>
+                </Style.Label>
+                <select>
+                        <option value="select">Select class</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
               </Style.ValueBox>
             </Style.InputBox>
             <Style.InputBox>
@@ -88,8 +102,9 @@ const FormPage = () => {
               <Style.ValueBox>
                 <Style.Label>SCHOOL SHIFT</Style.Label>
                 <Style.Input placeholder="Enter your name" />
-              </Style.ValueBox>
+              </Style.ValueBox> */}
             </Style.InputBox>
+            <button onClick={dataHandler}>Submit</button>
           </Style.Tablet>
         </Style.Box>
         <Style.LowerLine></Style.LowerLine>
@@ -98,4 +113,4 @@ const FormPage = () => {
   );
 };
 
-export default FormPage;
+export { FormPage, obj };
