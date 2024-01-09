@@ -1,4 +1,5 @@
 import { useState } from "react";
+<<<<<<< HEAD
 import Style from "./Css";
 const Form = () => {
   const [value, setValue] = useState("_______________________________");
@@ -11,6 +12,23 @@ const Form = () => {
     );
   };
 
+=======
+import { obj } from "../Page/FormPage";
+import Style from "./Css";
+const Form = () => {
+  const [set, setvalue] = useState('__________________');
+  // set""("_______________________________")
+
+  console.log(obj)
+  if(obj.Fname === " "){
+    let x = obj.Fname
+     if(!x){
+      setvalue('________')
+     }else{
+      setvalue(x)
+     }
+  }
+>>>>>>> 251418b3f6d48ec70c61608e4eeeff43eac3d8f0
   return (
     <>
       <Style.Container>
@@ -25,6 +43,7 @@ const Form = () => {
             <Style.ContentPic>
               <Style.ContentBox>
                 <Style.H3>
+<<<<<<< HEAD
                   CANDIDATE&apos;S NAME:&nbsp;<u>{value}</u>
                 </Style.H3>
                 <Style.H3>
@@ -35,6 +54,18 @@ const Form = () => {
                 </Style.H3>
                 <Style.H3>
                   GUARDIAN&apos; MOB NO:&nbsp;<u>{value}</u>
+=======
+                  CANDIDATE&apos;S NAME:&nbsp;<u>{set}</u>
+                </Style.H3>
+                <Style.H3>
+                  GUARDIAN&apos; NAME:&nbsp;<u>{}</u>
+                </Style.H3>
+                <Style.H3>
+                  D.O.B:&nbsp;<u>{}</u>
+                </Style.H3>
+                <Style.H3>
+                  GUARDIAN&apos; MOB NO:&nbsp;<u>{}</u>
+>>>>>>> 251418b3f6d48ec70c61608e4eeeff43eac3d8f0
                 </Style.H3>
               </Style.ContentBox>
               <Style.PicBox>
@@ -43,6 +74,7 @@ const Form = () => {
             </Style.ContentPic>
             <Style.AllContent>
               <Style.H3>
+<<<<<<< HEAD
                 PERSONAL MOB NO&nbsp;(If Any):&nbsp;<u>{value}</u>
               </Style.H3>
               <Style.H3>
@@ -50,6 +82,15 @@ const Form = () => {
               </Style.H3>
               <Style.H3>
                 SCHOOL NAME:&nbsp;<u>{value}</u>
+=======
+                PERSONAL MOB NO&nbsp;(If Any):&nbsp;<u>{}</u>
+              </Style.H3>
+              <Style.H3>
+                CLASS:&nbsp;<u>{}</u>
+              </Style.H3>
+              <Style.H3>
+                SCHOOL NAME:&nbsp;<u>{}</u>
+>>>>>>> 251418b3f6d48ec70c61608e4eeeff43eac3d8f0
               </Style.H3>
               <Style.H3>SCHOOL SHIFT:</Style.H3>
               <Style.H3>
@@ -58,6 +99,7 @@ const Form = () => {
                 &nbsp;&nbsp; EVENING &nbsp;
                 <input type="checkbox" />
               </Style.H3>
+<<<<<<< HEAD
               <Style.H3 onClick={handler}>
                 ADDRESS:<u>{add}</u>
               </Style.H3>
@@ -71,6 +113,20 @@ const Form = () => {
                 &nbsp;&nbsp; JEE&nbsp;
                 <input type="checkbox" />
                 &nbsp;&nbsp;NEET&nbsp;
+=======
+              <Style.H3>
+                ADDRESS:<u>{}</u>
+              </Style.H3>
+              <Style.H3>
+                EMAIL:<u>{}</u>
+              </Style.H3>
+              <Style.H3>COURSE:</Style.H3>
+              <Style.H3>
+                SCHOOL
+                <input type="checkbox" /> JEE
+                <input type="checkbox" />
+                NEET
+>>>>>>> 251418b3f6d48ec70c61608e4eeeff43eac3d8f0
                 <input type="checkbox" />
               </Style.H3>
             </Style.AllContent>
