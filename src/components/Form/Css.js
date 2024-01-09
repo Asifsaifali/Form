@@ -29,8 +29,8 @@ const Style = {
     font-family: "Times New Roman", Arial, sans-serif;
     line-height: 5px;
     margin: 10px;
-    font-size: 40px;
-    font-weight: none;
+    font-size: 46px;
+    font-weight: 100;
   `,
   H2: styled.h2`
     font-family: "Callibri", "Arial Narrow", Arial, sans-serif;
@@ -43,6 +43,7 @@ const Style = {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     font-weight: normal;
     font-size: 16px;
+    line-height: 20px;
   `,
   H4: styled.h4`
     font-family: "Callibri", "Arial Narrow", Arial, sans-serif;
@@ -93,7 +94,8 @@ const Style = {
     width: 100%;
     height: 80%;
     // border:1px solid gray;
-    line-height: 5px;
+    line-height: 10px;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     text-align: left;
