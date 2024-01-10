@@ -2,6 +2,7 @@ import { useState } from "react";
 import Style from "./Css";
 // import Pic from '../.././assets/boy.png'
 import { Link } from "react-router-dom";
+import data from "../JSON_data/data";
 
 const Obj = {
    Fname: "",
@@ -26,13 +27,8 @@ const FormPage = () => {
      Obj.Guardians_name = guard
      Obj.Mob_No = number
      Obj.dob = dob
-   //   console.log(event.target[0].value)
-   //   console.log(event.target.elements.username.value)
-   //   console.log(event.target.username.value)
-   //   console.log(this.inputNode.value) 
-   console.log(Obj)
-
    }
+
    return (
       <>
          <Style.Container>
@@ -133,4 +129,4 @@ const FormPage = () => {
 }
 
 
-export default FormPage ;
+export { FormPage, Obj} ;

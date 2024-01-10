@@ -8,10 +8,9 @@ const Style = {
         align-items: center;
         flex-direction: column;
     `,
-
-    Form : styled.form`
-    width: 100%;
-    height: 100%;
+    Form: styled.form`
+        width: 100%;
+        height: 100%;
     `,
     Tablet: styled.div`
         width: 89%;
@@ -105,7 +104,7 @@ const Style = {
         align-items: center;
         border: 1px solid gray;
     `,
-    OuterSmallContent : styled.div`
+    OuterSmallContent: styled.div`
         width: 100%;
         height: 60px;  
     `,
@@ -129,13 +128,13 @@ const Style = {
         flex-direction: column;
         border-radius: 30px ;
     `,
-    InputBox:styled.div`
+    InputBox: styled.div`
         width: 100%;
         height: 100px;
         /* border: 1px solid black; */
         display: flex;
     `,
-    ValueBox:styled.div`
+    ValueBox: styled.div`
         display: flex;
         flex: 1;
         flex-direction: column;
