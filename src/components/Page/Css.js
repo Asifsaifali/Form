@@ -160,6 +160,21 @@ const Style = {
         font-weight: 500;
         margin: 10px 0px 5px 10px;
     `,
+    Option : styled.option`   
+    `,
+    Select : styled.select`
+     width: 350px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: #f5f5f5;
+        outline: none;
+        padding-left: 10px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border: none;
+        font-size: 15px;
+        color: black;
+        cursor: pointer;
+    `,
 }
 
 export default Style;
