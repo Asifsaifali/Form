@@ -1,5 +1,6 @@
 import './App.css'
 import Form from './components/Form/Form'
+// import { FormPage } from './components/Page/FormPage';
 import FormPage from './components/Page/FormPage';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 function App() {

@@ -9,6 +9,10 @@ const Style = {
         flex-direction: column;
     `,
 
+    Form : styled.form`
+    width: 100%;
+    height: 100%;
+    `,
     Tablet: styled.div`
         width: 89%;
         max-height: 92%;
