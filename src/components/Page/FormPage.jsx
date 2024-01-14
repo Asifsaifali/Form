@@ -1,4 +1,5 @@
 import { useState } from "react";
+// import data from "../JSON_data/data";
 import Style from "./Css";
 
 const Obj = {
@@ -7,9 +8,9 @@ const Obj = {
   Guardians_name: "",
   Dob: "",
   Mob_No: "",
-  Class:"",
+  Class: "",
   School: "",
-  Shift : "",
+  Shift: "",
 };
 
 const FormPage = () => {
@@ -21,7 +22,7 @@ const FormPage = () => {
   const [section, setClass] = useState();
   const [school, setSchool] = useState();
   const [shift, setShift] = useState();
-  
+
 
   const submitHandler = (event) => {
     event.preventDefault();
@@ -30,10 +31,11 @@ const FormPage = () => {
     Obj.Guardians_name = guard;
     Obj.Mob_No = number;
     Obj.Dob = dob;
-    Obj.Class = section
-    Obj.School = school
-    Obj.Shift = shift
+    Obj.Class = section;
+    Obj.School = school;
+    Obj.Shift = shift;
     console.log(Obj);
+
   };
 
   return (
@@ -51,7 +53,7 @@ const FormPage = () => {
             <Style.Tablet>
               <Style.OuterSmallContent>
                 <Style.SmallContent>
-                  &nbsp;&nbsp;&nbsp;REGISTRATION FORM
+                  &nbsp;&nbsp;&nbsp;<u>REGISTRATION FORM</u>
                 </Style.SmallContent>
               </Style.OuterSmallContent>
               <Style.InputBox>
@@ -107,13 +109,19 @@ const FormPage = () => {
                 </Style.ValueBox>
                 <Style.ValueBox>
                   <Style.Label>CLASS</Style.Label>
-                  <Style.Select name="shift" id="school-select" onClick={(e)=>setClass(e.target.value)}>
-                     <Style.Option value="">--Please choose Class--</Style.Option>
-                     <Style.Option value="X">X</Style.Option>
-                     <Style.Option value="XI">XI</Style.Option>
-                     <Style.Option value="XII">XII</Style.Option>
-                     <Style.Option value="JEE">JEE</Style.Option>
-                     <Style.Option value="NEET">NEET</Style.Option>
+                  <Style.Select
+                    name="shift"
+                    id="school-select"
+                    onClick={(e) => setClass(e.target.value)}
+                  >
+                    <Style.Option value="">
+                      --Please choose Class--
+                    </Style.Option>
+                    <Style.Option value="X">X</Style.Option>
+                    <Style.Option value="XI">XI</Style.Option>
+                    <Style.Option value="XII">XII</Style.Option>
+                    <Style.Option value="JEE">JEE</Style.Option>
+                    <Style.Option value="NEET">NEET</Style.Option>
                   </Style.Select>
                 </Style.ValueBox>
               </Style.InputBox>
@@ -129,17 +137,28 @@ const FormPage = () => {
                 </Style.ValueBox>
                 <Style.ValueBox>
                   <Style.Label>SCHOOL SHIFT</Style.Label>
-                  <Style.Select name="shift" id="school-select" onClick={(e)=>setShift(e.target.value)}>
-                     <Style.Option value="">--Please choose School shift--</Style.Option>
-                     <Style.Option value="morning">Morning</Style.Option>
-                     <Style.Option value="evening">Evening</Style.Option>
+                  <Style.Select
+                    name="shift"
+                    id="school-select"
+                    onClick={(e) => setShift(e.target.value)}
+                  >
+                    <Style.Option value="">
+                      --Please choose School shift--
+                    </Style.Option>
+                    <Style.Option value="morning">Morning</Style.Option>
+                    <Style.Option value="evening">Evening</Style.Option>
                   </Style.Select>
                 </Style.ValueBox>
               </Style.InputBox>
               <Style.InputBox>
                 <Style.ValueBox>
-                  <Style.Label>SCHOOL NAME</Style.Label>
-                  <Style.Input placeholder="Enter your name" />
+                  <Style.Label>SCHOOL ADDRESS</Style.Label>
+                  <Style.Input
+                    type="text"
+                    onChange={(e) => setSchool(e.target.value)}
+                    name="saddress"
+                    placeholder="Enter your school address"
+                  />
                 </Style.ValueBox>
                 <Style.ValueBox>
                   <Style.Label>SCHOOL SHIFT</Style.Label>
